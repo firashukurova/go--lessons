@@ -99,4 +99,16 @@ func main() {
 		fmt.Println("leap year")
 	}
 
+	fmt.Println("Add month")
+	var month int
+	fmt.Scanln(&month)
+	switch month {
+	case 1, 3, 5, 7, 8, 10, 12:
+		fmt.Printf("In month %d is %d days", month, 31)
+	case 4, 6, 9, 11:
+		fmt.Printf("In month %d is %d days", month, 30)
+	case 2:
+		fmt.Printf("In month %d is %d days", month, 28)
+	}
+
 }
