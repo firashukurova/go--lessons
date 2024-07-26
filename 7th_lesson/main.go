@@ -8,6 +8,7 @@ type Score int
 
 type Count int
 type Temperature float32
+type Price float64
 
 type Adder func(int, int) int
 type Operation func(int, int) int
@@ -32,6 +33,16 @@ type Person2 struct {
 	Name string
 	Age  int
 	Addr Address
+}
+
+type Book struct {
+	Title  string
+	Author string
+	Pages  int
+}
+
+type Coordinate struct {
+	X, Y int
 }
 
 func main() {
@@ -173,5 +184,29 @@ func CheckTemperature(temperature Temperature) string {
 	}
 }
 
+// Применение скидки. Создайте псевдоним для типа float64 под названием Price. Напишите функцию, которая принимает Price и возвращает новую цену с 10% скидкой.
+
+func Discount(price Price) Price {
+	discountAmount := price * 0.10
+	discountPrice := price - discountAmount
+	return Price(discountPrice)
+}
+
+// Информация о книге. Создайте структуру Book с полями Title (строка), Author (строка) и Pages (целое число). Напишите функцию, которая принимает Book и выводит информацию о книге.
+
+func GetAuthor(book Book) {
+	fmt.Printf("Название: %s\n", book.Title)
+	fmt.Printf("Автор: %s\n", book.Author)
+	fmt.Printf("Количество страниц: %d\n", book.Pages)
+
+}
+
 // Сравнение двух структур через указатели. Создайте структуру Coordinate с полями X и Y. Напишите функцию, которая принимает указатели на две
 // Coordinate и возвращает сообщение о том, равны ли они или нет.
+
+func CompareCoordinates(c1 *Coordinate, c2 *Coordinate) string {
+	if c1.X == c2.X && c1.Y == c2.Y {
+		return "Координаты равны"
+	}
+	return "Координаты не равны"
+}
