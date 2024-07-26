@@ -12,6 +12,9 @@ func main() {
 	MakeNodes()
 	MakeNodes3()
 
+	head := CreateLinkedList()
+	TraverseLinkedList(head)
+
 }
 
 //Создайте структуру Node, которая содержит целое значение и указатель на следующий узел. Напишите функцию,
@@ -46,3 +49,22 @@ func MakeNodes3() {
 
 //Создайте структуру Node, которая содержит целое значение и указатель на следующий узел. Напишите функцию,
 //которая принимает указатель на первый узел и обходит связный список, выводя значения всех узлов
+
+func CreateLinkedList() *Node {
+	node1 := &Node{num: 1}
+	node2 := &Node{num: 2}
+	node3 := &Node{num: 3}
+
+	node1.next = node2
+	node2.next = node3
+
+	return node1 // Возвращаем указатель на первый узел
+}
+
+func TraverseLinkedList(head *Node) {
+	current := head
+	for current != nil {
+		fmt.Println(current.num)
+		current = current.next
+	}
+}
