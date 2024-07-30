@@ -84,16 +84,16 @@ func ReverseArr(arr []int) []int {
 
 //15 Удалить дубликаты из массива
 
-func DeleteArr(arr []int) []int {
-	res := []int{}
-	for i, v := range arr {
-		found := false
-		for j := i + 1; j < len(arr); j++ {
-			if arr[j] == v {
-				found = true
-			}
-		}
-	}
-	res = append(res, arr[len(arr)-1])
-	return res
-}
+//func DeleteArr(arr []int) []int {
+//	res := []int{}
+//	for i, v := range arr {
+//		found := false
+//		for j := i + 1; j < len(arr); j++ {
+//			if arr[j] == v {
+//				found = true
+//			}
+//		}
+//	}
+//	res = append(res, arr[len(arr)-1])
+//	return res
+//}
