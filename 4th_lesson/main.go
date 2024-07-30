@@ -90,13 +90,13 @@ func main() {
 	}
 
 	//узнать високосный год if28
-	year := 1996
-
-	if year%4 == 0 && year%400 == 0 {
-		if year%100 == 0 {
-			fmt.Println("")
-		}
+	var year int
+	fmt.Scan(&year)
+	if year%400 == 0 || (year%4 == 0 && year%100 != 0) {
 		fmt.Println("leap year")
+
+	} else {
+		fmt.Println("Not leap year")
 	}
 
 	fmt.Println("Add month")

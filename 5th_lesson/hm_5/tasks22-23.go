@@ -4,12 +4,13 @@ import "fmt"
 
 func main() {
 
-	PrintNumbersUntilSum200()
+	//PrintNumbersUntilSum200()
+	PerfectNumber()
 
 	//Напишите программу, которая бесконечно запрашивает у пользователя ввод числа и прекращает выполнение, если введенное число делится на 7
 	for {
 		var input int
-		fmt.Println("Enter number: ")
+		fmt.Print("Enter number: ")
 		fmt.Scan(&input)
 		if input%7 == 0 {
 			break
@@ -29,5 +30,31 @@ func PrintNumbersUntilSum200() {
 		}
 		fmt.Printf("%d ", i)
 	}
-	fmt.Printf("\nСумма достигла: %d\n", sum)
+	fmt.Printf("\nGet sum: %d\n", sum)
+}
+
+//Напишите программу, которая находит все совершенные числа от 1 до n. (Совершенное число - это число, равное сумме всех своих делителей, кроме самого себя)
+
+func PerfectNumber() {
+	var n int
+	fmt.Print("Введите число n: ")
+	fmt.Scan(&n)
+
+	fmt.Printf("Совершенные числа от 1 до %d:\n", n)
+	for i := 1; i <= n; i++ {
+		if isPerfect(i) {
+			fmt.Printf("%d ", i)
+		}
+	}
+	fmt.Println()
+}
+
+func isPerfect(num int) bool {
+	sum := 0
+	for i := 1; i < num; i++ {
+		if num%i == 0 {
+			sum += i
+		}
+	}
+	return sum == num
 }

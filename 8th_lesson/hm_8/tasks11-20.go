@@ -10,10 +10,12 @@ func main() {
 	arr1 := []int{1, 2, 3, 4, 5, 6}
 	fmt.Println(CheckPalindrome(arr1))
 	fmt.Println(FindSecondMax(arr1))
+	fmt.Println(ReverseArr(arr1))
 
 }
 
-//Поменять местами максимальный и минимальный элементы массива
+//11Поменять местами максимальный и минимальный элементы массива
+//необходимо добавить если будет 2 или 3 макс и мин
 
 func ChangeArr(arr []int) []int {
 	if len(arr) < 2 {
@@ -38,7 +40,7 @@ func ChangeArr(arr []int) []int {
 
 }
 
-//Проверить, является ли массив палиндромом
+//12 Проверить, является ли массив палиндромом
 
 func CheckPalindrome(arr []int) bool {
 	for i := 0; i < len(arr)/2; i++ {
@@ -49,7 +51,7 @@ func CheckPalindrome(arr []int) bool {
 	return true
 }
 
-//Найти второе наибольшее число в массиве
+//13 Найти второе наибольшее число в массиве
 
 func FindSecondMax(arr []int) int {
 
@@ -70,11 +72,28 @@ func FindSecondMax(arr []int) int {
 	return secondMax
 }
 
-//Перевернуть массив
+//14 Перевернуть массив
 
-func ReverseArr(arr []int) []int  {
-	arr := []int{}
-	for _, v := range len(arr) {
-		if
+func ReverseArr(arr []int) []int {
+	reversed := []int{}
+	for i := len(arr) - 1; i >= 0; i-- {
+		reversed = append(reversed, arr[i])
 	}
+	return reversed
 }
+
+//15 Удалить дубликаты из массива
+
+//func DeleteArr(arr []int) []int {
+//	res := []int{}
+//	for i, v := range arr {
+//		found := false
+//		for j := i + 1; j < len(arr); j++ {
+//			if arr[j] == v {
+//				found = true
+//			}
+//		}
+//	}
+//	res = append(res, arr[len(arr)-1])
+//	return res
+//}

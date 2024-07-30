@@ -5,7 +5,9 @@ import "fmt"
 func main() {
 
 	//Pyramid()
-	MultiplicationTable()
+	//MultiplicationTable()
+	PascalsTriangle()
+
 }
 
 func Pyramid() {
