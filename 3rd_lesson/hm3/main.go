@@ -29,7 +29,7 @@ func main() {
 	concatenator := func(str1, str2 string) string {
 		return str1 + str2
 	}
-	fmt.Println(concatenator("A", "B"))
+	fmt.Println(concatenator("Go", "Lang"))
 
 	//Создайте переменную isPositive, которая является функцией, принимающей целое число и возвращающей true, если число положительное
 	isPositive := func(somenum int) bool {

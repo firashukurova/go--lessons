@@ -31,7 +31,7 @@ func CreateMultiplier(n int) func(int) int {
 func CreateGreeter(greeting string) func(string) string {
 	return func(name string) string {
 		if greeting == "" {
-			return "Привет, гость " + name + "!"
+			return "Привет," + name + "!"
 		}
 		return greeting + ", " + name + "!"
 	}
