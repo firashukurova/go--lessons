@@ -10,6 +10,7 @@ func main() {
 	arr1 := []int{1, 2, 3, 4, 5, 6}
 	fmt.Println(CheckPalindrome(arr1))
 	fmt.Println(FindSecondMax(arr1))
+	fmt.Println(ReverseArr(arr1))
 
 }
 
@@ -72,9 +73,16 @@ func FindSecondMax(arr []int) int {
 
 //Перевернуть массив
 
-func ReverseArr(arr []int) []int  {
-	arr := []int{}
-	for _, v := range len(arr) {
-		if
+func ReverseArr(arr []int) []int {
+	reversed := []int{}
+	for i := len(arr) - 1; i >= 0; i-- {
+		reversed = append(reversed, arr[i])
 	}
+	return reversed
 }
+
+//Удалить дубликаты из массива
+
+//func DeleteArr(arr []int) []int {
+//
+//}

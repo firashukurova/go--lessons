@@ -136,7 +136,7 @@ func FindIdx(arr []int, target int) []int {
 //Создать копию массива
 
 func CopyArr(arr []int) []int {
-	slice := make([]int, len(arr))
+	slice := []int{} //make([]int, len(arr))
 	copy(slice, arr)
 	return slice
 }
