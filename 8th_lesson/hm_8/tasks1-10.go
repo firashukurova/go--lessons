@@ -46,7 +46,7 @@ func main() {
 
 }
 
-// Найти максимальный элемент в массиве. Найти минимальный элемент в массиве.
+//1 и 2) Найти максимальный элемент в массиве. Найти минимальный элемент в массиве.
 
 func FindMinMax(arr []int) (int, int) {
 	min := arr[0]
@@ -63,7 +63,7 @@ func FindMinMax(arr []int) (int, int) {
 	return min, max
 }
 
-//Подсчитать количество положительных чисел в массиве.
+//3 Подсчитать количество положительных чисел в массиве.
 
 func FindPositive(arr []int) int {
 	counter := 0
@@ -75,7 +75,7 @@ func FindPositive(arr []int) int {
 	return counter
 }
 
-//Найти сумму всех элементов массива.
+//4 Найти сумму всех элементов массива.
 
 func FindSum(arr []int) int {
 	sum := 0
@@ -85,7 +85,7 @@ func FindSum(arr []int) int {
 	return sum
 }
 
-//Найти среднее значение всех элементов массива.
+//5 Найти среднее значение всех элементов массива.
 
 func FindAvg(arr []int) float64 {
 	sum := 0.0
@@ -97,7 +97,7 @@ func FindAvg(arr []int) float64 {
 	return avg
 }
 
-//Удалить все вхождения заданного числа из массива
+//6 Удалить все вхождения заданного числа из массива
 
 func DeleteArr(arr []int, num int) []int {
 	result := make([]int, 0, len(arr))
@@ -111,7 +111,7 @@ func DeleteArr(arr []int, num int) []int {
 
 }
 
-//Умножить все элементы массива на заданное число
+//7 Умножить все элементы массива на заданное число
 
 func MultiplyArr(arr []int, multiplier int) []int {
 	result := make([]int, len(arr))
@@ -121,7 +121,7 @@ func MultiplyArr(arr []int, multiplier int) []int {
 	return result
 }
 
-//Найти все индексы заданного числа в массиве
+//8 Найти все индексы заданного числа в массиве
 
 func FindIdx(arr []int, target int) []int {
 	result := make([]int, 0)
@@ -133,7 +133,7 @@ func FindIdx(arr []int, target int) []int {
 	return result
 }
 
-//Создать копию массива
+//9 Создать копию массива
 
 func CopyArr(arr []int) []int {
 	slice := make([]int, len(arr))
@@ -141,7 +141,7 @@ func CopyArr(arr []int) []int {
 	return slice
 }
 
-//Объединить два массива
+//10 Объединить два массива
 
 func UnionArr(arr1, arr2 []string) []string {
 	combinedSlice := append(arr1, arr2...)
