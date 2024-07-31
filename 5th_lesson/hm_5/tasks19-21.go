@@ -3,15 +3,18 @@ package main
 import "fmt"
 
 func main() {
+	//PrintPrimeNumbers()
+	//PrintNumbers2()
+	CheckFun()
 
 }
 
 //Напишите программу, которая выводит только те числа от 1 до 50, которые являются простыми
 
 func PrintPrimeNumbers() {
-	for i := 1; i <= 50; i++ {
+	for i := 2; i <= 50; i++ {
 		isPrime := true
-		for j := 1; j <= i; j++ {
+		for j := 2; j*j <= i; j++ {
 			if i%j == 0 {
 				isPrime = false
 				break
@@ -43,11 +46,10 @@ func CheckFun() {
 		fmt.Printf("%d ", i)
 		for j := 1; j*j*j <= i; j++ {
 			if j*j*j == i {
-				fmt.Println("\nFind Cube:", i)
+				fmt.Println("\nCube", i)
 				return
 			}
 		}
-
 	}
-	fmt.Println("Cube isn't find")
+	fmt.Println("\nCube isn't find")
 }

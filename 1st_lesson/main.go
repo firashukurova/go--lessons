@@ -114,11 +114,11 @@ func main() {
 
 	fmt.Print(bl, "\n", rn, "\n", bt, "\n", str, "\n", cmpx, "\n", cmpx2, "\n")
 
-	//второе задание 
+	//второе задание
 	num1 := 30
 	num2 := 50
 
-	fmt.Println(num1+num2)
+	fmt.Println(num1 + num2)
 
 	a := 54
 	b := 89
@@ -126,7 +126,6 @@ func main() {
 
 	fmt.Println(c)
 	//fmt.Printf("%T", c)
-
 
 	// fmt.Println(int1 + int(int2))
 	// fmt.Println(int3 + int16(int4))
