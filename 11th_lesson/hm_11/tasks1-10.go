@@ -1,11 +1,17 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 	"unicode/utf8"
 )
 
 func main() {
+
+	m := make(map[string]int)
+	m["apple"] = 5
+	m["banana"] = 10
+	fmt.Println(len(m))
 
 }
 

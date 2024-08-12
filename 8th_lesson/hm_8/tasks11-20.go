@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main1() {
 	arr := []int{1, -3, 5, 19, 0, 6, -7, 8, 9, -12}
 	fmt.Printf("Исходный массив: %v\n", arr)
 	fmt.Println("Поменяли индексы:", ChangeArr(arr))
@@ -11,7 +11,6 @@ func main() {
 	fmt.Println(CheckPalindrome(arr1))
 	fmt.Println(FindSecondMax(arr1))
 	fmt.Println(ReverseArr(arr1))
-<<<<<<< HEAD
 
 	arr3 := []int{1, 3, 3, 4, 4, 5, 5, 6, 7, 8, 9}
 	fmt.Println(DeleteDuplicate(arr3))
@@ -23,8 +22,6 @@ func main() {
 	a2 := []int{9, 44, 30, 12, 5, 7, 15}
 	fmt.Println(IntersectionArr(a1, a2))
 	fmt.Println(SubsetOfArray(a1, a2))
-=======
->>>>>>> 8fa401efc7b2d162227c2b3b15d1e4d9c4da09fe
 
 }
 
@@ -94,7 +91,7 @@ func ReverseArr(arr []int) []int {
 		reversed = append(reversed, arr[i])
 	}
 	return reversed
-<<<<<<< HEAD
+
 }
 
 //15 Удалить дубликаты из массива
@@ -223,8 +220,7 @@ func LongestUniqueSubarray(arr []int) int {
 	}
 
 	return maxLength
-=======
->>>>>>> 8fa401efc7b2d162227c2b3b15d1e4d9c4da09fe
+
 }
 
 //15 Удалить дубликаты из массива

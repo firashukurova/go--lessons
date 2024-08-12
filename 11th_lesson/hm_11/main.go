@@ -6,15 +6,18 @@ import (
 )
 
 func main() {
+	//
+	//str1 := "Hello"
+	//str2 := "Go"
+	////s1 := "Let's"
+	////s2 := "programming"
+	//fmt.Println(Concatenation(str1, str2))
+	////fmt.Println(Concatenation2(s1, s2))
+	//str := "Hello"
+	//fmt.Println(ReturnLen(str))
 
-	str1 := "Hello"
-	str2 := "Go"
-	//s1 := "Let's"
-	//s2 := "programming"
-	fmt.Println(Concatenation(str1, str2))
-	//fmt.Println(Concatenation2(s1, s2))
-	str := "Hello"
-	fmt.Println(ReturnLen(str))
+	var r rune = 'п'
+	fmt.Println(string(NextWord(r)))
 
 }
 
